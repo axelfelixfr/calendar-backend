@@ -7,7 +7,8 @@ const dbConnection = async() => {
             // De igual forma pasamos estos parámetros, obtenidos en la documetanción de moongose, https://mongoosejs.com/
             useNewUrlParser: true, 
             useUnifiedTopology: true,
-            useCreateIndex: true
+            useCreateIndex: true,
+            useFindAndModify: false,
         });
 
         // Para saber que se conecto correctamente imprimos esto en consola
